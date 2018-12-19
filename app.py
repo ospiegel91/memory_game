@@ -18,6 +18,10 @@ def stylesheets(filename):
 def js(filename):
     return static_file(filename, root='static/js')
 
+@route('/img/<filename:re:.*\.(jpg|png)>', method='GET')
+def img(filename):
+    return static_file(filename, root='static/img')
+
 
 if __name__ == "__main__":
     run(host='0.0.0.0', port=argv[1])
