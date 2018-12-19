@@ -18,9 +18,15 @@ def stylesheets(filename):
 def js(filename):
     return static_file(filename, root='static/js')
 
-@route('/img/<filename:re:.*\.(jpg|png)>', method='GET')
+
+@route('/img/<filename:re:.*\.(jpg|png|jpeg)>', method='GET')
 def img(filename):
     return static_file(filename, root='static/img')
+
+
+@route('/song/<filename:re:.*\.(mp3)>', method='GET')
+def song(filename):
+    return static_file(filename, root='static/song')
 
 
 if __name__ == "__main__":
