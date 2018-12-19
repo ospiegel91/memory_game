@@ -1,0 +1,458 @@
+.loading-page-outer-container{
+    height: 680px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-page-inner-container{
+    height: 70%;
+    width: 600px;
+    background-image: url(https://ae01.alicdn.com/kf/HTB1YncQbi6guuRkSmLyq6AulFXaK/DIY-frame-We-Love-This-Game-Michael-Jordan-LeBron-Basketball-stars-Poster-Fabric-Silk-Poster-Posters.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+}
+
+.menu{
+    height: 66%;
+    width: 58%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15%;
+}
+.inner-menu-container{
+    height: 94%;
+    width: 94%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-menu-container h2{
+    padding: 0;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0.5%;
+    font-family: 'Schoolbell', cursive;
+    font-weight: 300;
+}
+
+.inner-menu-container p{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Schoolbell', cursive;
+    font-size: 1em;
+}
+
+.menuButton{
+    margin-top: 5%;
+    padding-top: 0.8%;
+    width: 45%;
+    height: 17%;
+    border-radius: 15%;
+    font-family: 'Schoolbell', cursive;
+    background-color: black;
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+    
+}
+
+.menuButton:hover{
+    border: gold thick solid;
+}
+
+
+.outerContainer{
+    height: 680px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.headingContainer{
+    height: 12%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+
+}
+.logoContainer{
+    width: 25%;
+}
+.headingContainer h1{
+    font-size: 1.8em;
+    margin: 1% 0;
+    padding: 0;
+    font-family: 'Schoolbell', cursive;
+    
+}
+.headingContainer p{
+    margin-top: 2%;
+    font-size: 1em;
+    font-family: 'Schoolbell', cursive;
+}
+.innerContainer{
+    width: 98%;
+    height: 78%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rowContainer{
+    background-color: black;
+    width: 100%;
+}
+
+.bigThrees{
+    height: 20%;
+}
+.duos{
+    height: 25%;
+}
+
+.cardClosedImg{
+    background: url("../images/backOfCard.jpeg") white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+}
+.card-container{
+    height: 96%;
+    border: black solid thick;
+    margin-top: 2px;
+    cursor: pointer;
+    
+}
+
+
+.card-container.open {
+	transform: rotateY(0);
+	cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
+.goldBorder{
+    border: gold thin solid;
+    
+}
+
+
+
+.card-container.match {
+	cursor: default;
+	background: #E5F720;
+	font-size: 33px;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
+
+.card-container.unmatched {
+	animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+	background: #e2043b;
+}
+
+.card-container.disabled {
+	pointer-events: none;
+	opacity: 0.9;
+}
+
+
+
+
+
+
+
+.score-box-container{
+    height: 10%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#959595+0,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100;Black+Gloss+Pipe */
+    background: #959595; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom: white solid thin;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Schoolbell', cursive;
+    padding: 0 2.5%;
+    font-size: 1.2em;
+}
+.timerContainer{
+    margin-left: 3%;
+    text-align: center;
+    
+}
+.timerContainer p{
+    margin-bottom: 0;
+    padding: 0;
+}
+.cardsRemainingContainer{
+    text-align: center;
+}
+.cards-remaining{
+    margin-right: 3%;
+}
+
+.logoContainerLeft{
+    width: 27%;
+    background-image: url(https://www.cheatsheet.com/wp-content/uploads/2015/04/Kobe-Bryant-Shaq-AFP-Getty-Images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 10%;
+    height: 98%;
+
+}
+
+.logoContainerRight{
+    width: 27%;
+    background-image: url(http://media.masslive.com/celtics_impact/photo/9567314-large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 5%;
+    height: 98%;
+
+}
+
+#victory-modal{
+    display: none;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.815);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Schoolbell', cursive;
+}
+
+.inner-modal-container{
+    background-color: gold;
+    width: 55%;
+    height: 65%;
+    z-index: 123456;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Schoolbell', cursive;
+}
+.inner-modal-container p{
+    height: 20px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+#gif{
+    height: 170px;
+}
+
+.input-container{
+    width: 90%;
+    list-style-type:none;
+    margin-top: 0.5%;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.inputPairing{
+    float:left;
+    margin:0 5px 0 0;
+    width: 30%;
+    height:40px;
+    position: relative;
+    
+    
+}
+.inputPairing label, .inputPairing input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.inputPairing input[type="radio"] {
+    opacity:0.01;
+    z-index:12345;
+}
+.inputPairing input[type="radio"]:checked + label,
+.Checked + label {
+    border: gold thin solid;
+    background: black;
+    color: white;
+}
+.inputPairing label {
+    height: 95%;
+    padding-top: 5%;
+    text-align: center;
+    padding:1px;
+    cursor:pointer;
+    z-index: 1234;
+    font-size: 0.9em;
+    border: black solid thin;
+    font-family: 'Schoolbell', cursive;
+}
+
+.playAgain{
+    width: 70%;
+    height: 8%;
+    padding-top: 3px;
+    font-size: 1.3em;
+    background: black;
+    border-radius: 15px;
+    color: gold;
+    text-align: center;
+    padding: 2px 5px;
+    text-decoration: none;
+
+}
+
+.restart{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.restart:hover{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1px 3px;
+    text-align: center;
+
+
+}
+
+
+@media only screen and (max-width : 990px){
+    .card-container{
+        background-color: white;
+        height: 48%;
+    }
+    .headingContainer h1{
+        font-size: 1.5em;
+    }
+    .headingContainer p{
+        font-size: 1em;
+        margin-left: 0.2%;
+        margin-right: 0.2%;
+    }
+    
+    #gif{
+        height: 105px;
+    }
+    .score-box-container{
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+.flipInY {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes flipInY {
+    0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0;
+    }
+    40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    }
+    60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+    }
+    80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    }
+    }
+    @keyframes flipInY {
+    0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0;
+    }
+    40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    }
+    60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+    }
+    80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    }
+}
+    
