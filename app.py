@@ -19,9 +19,9 @@ def js(filename):
     return static_file(filename, root='static/js')
 
 
-@route('/img/<filename:re:.*\.(jpg|png|jpeg)>', method='GET')
+@route('/images/<filename:re:.*\.(jpg|png|jpeg)>', method='GET')
 def img(filename):
-    return static_file(filename, root='static/img')
+    return static_file(filename, root='static/images')
 
 
 @route('/song/<filename:re:.*\.(mp3)>', method='GET')
